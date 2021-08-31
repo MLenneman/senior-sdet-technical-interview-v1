@@ -3,6 +3,8 @@ Technical Interview Repository Project for the Senior SDET position. __You are a
 to use any technology that you have expressed on your resume to automate the APIs
 and the UI. However, please create a feature branch and commit all of your code in here.__
 
+:warning: __Do not add dependencies in any other repository than this one.__  
+
 ## 2. Installation
 
 #### 2.1 GitHub Account

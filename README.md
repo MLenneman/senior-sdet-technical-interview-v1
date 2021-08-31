@@ -64,4 +64,4 @@ There are ids on __most__ of the critical items.
 
 1. Create a Docker file for your testing application.
 
-2. Explain how you would go about getting this Dockerfile running remotely.
+2. Explain concisely how you would go about getting a container from the Docker image running remotely.

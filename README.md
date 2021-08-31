@@ -21,7 +21,7 @@ Install the Angular CLI [v12.3.3](https://www.npmjs.com/package/@angular/cli) gl
 
 The APIs are hosted using the npm package json-server.
 
-1. Run ```git clone https://github.com/MLenneman/technical-interview-api.git``` (1 minute)
+1. Run ```git clone https://github.com/MLenneman/technical-interview-api.git``` or ```git clone git@github.com:MLenneman/technical-interview-api.git``` (1 minute)
 
 2. Follow the README.md instructions in technical-interview-api to start the server. (2 minutes)
 
@@ -29,7 +29,7 @@ The APIs are hosted using the npm package json-server.
 
 A very simple UI was created to test your front-end automation knowledge.
 
-1. Run ```git clone https://github.com/MLenneman/technical-interview-angular.git``` (1 minute)
+1. Run ```git clone https://github.com/MLenneman/technical-interview-angular.git``` or ```git clone git@github.com:MLenneman/technical-interview-angular.git``` over SSH (1 minute)
 
 2. Follow the README.md instructions in technical-interview-angular to start the server. (2 minutes)
 

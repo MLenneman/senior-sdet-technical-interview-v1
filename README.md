@@ -25,7 +25,7 @@ The APIs are hosted using the npm package json-server.
 
 2. Run ```npm install``` in project root. (3 minutes)
 
-2. Follow the README.md instructions in technical-interview-api to start the server. (2 minutes)
+3. Follow the README.md instructions in technical-interview-api to start the server. (2 minutes)
 
 #### 2.4 Angular setup.
 

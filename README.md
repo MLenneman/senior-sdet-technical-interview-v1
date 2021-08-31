@@ -64,4 +64,9 @@ There are ids on __most__ of the critical items.
 
 1. Create a Docker file for your testing application.
 
-2. Explain concisely how you would go about getting a container from the Docker image running remotely.
+2. Explain concisely how you would go about getting a container from the Docker image running remotely. Add this file to your commits named ```deployment.txt```
+
+#### 3.5 Commit.
+
+1. Commit all of your ```source code```, the ```Dockerfile``` and the ```deployment.txt``` file just as you would in a real production environment. Be sure that the artifacts are
+   set in a feature branch and not ```main```.

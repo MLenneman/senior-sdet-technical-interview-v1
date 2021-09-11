@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="REST API tests" verbose="1">
+    <parameter name="domainName" value="https://reqres.in/"/>
+    <test name="Here We Can Name the profile like smoke, sanity or regression and create a profile on pom to match it">
+        <classes>
+            <class name="Devices.DevicesTest"/>
+        </classes>
+    </test>
+</suite>

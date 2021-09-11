@@ -23,7 +23,6 @@ public class DevicesTest {
             return;
         }
         devicesToRemove.forEach(d -> {
-            System.out.println(d.toString());
             RestAssured.delete(DEVICES.getUrl(d.getId()));
         });
     }
@@ -66,11 +65,11 @@ public class DevicesTest {
 
     @Test(priority = 3,
             description = """
-                            GIVEN that I have the 'devices' endpoint properly configured to respond to PUT requests 
-                                returning all devices on database
-                            WHEN I hit the 'devices' endpoint PUT request with valid device's id as param
+                            GIVEN that I have the 'devices' endpoint properly configured to respond to get requests
+                                returning single device present on database based on id
+                            WHEN I hit the 'devices' endpoint get request with valid device's id as param
                             THEN I should see in the response code Status Code 200 
-                                AND in the Response Body a JSON with the device updated
+                                AND in the Response Body a JSON with the device requested
                             """)
     public void getOneDevice() {
         Device deviceCreated = RestAssured
@@ -88,7 +87,7 @@ public class DevicesTest {
     @Test(priority = 4,
             description = """
                             GIVEN that I have the 'devices' endpoint properly configured to respond to PUT requests 
-                                returning all devices on database
+                                updating field values on database
                             WHEN I hit the 'devices' endpoint PUT request with valid device's id as param
                             THEN I should see in the response code Status Code 200 
                                 AND in the Response Body a JSON with the device updated

@@ -1,12 +1,54 @@
 
-POST /devices 201 31.119 ms - 31
-POST /devices 201 5.191 ms - 45
-GET /devices/1000001 200 12.138 ms - 45
-PUT /devices/998 200 33.944 ms - 47
-PUT /devices/999 200 32.993 ms - 31
-DELETE /devices/1000000 200 33.236 ms - 2
-DELETE /devices/998 200 14.050 ms - 2
-DELETE /devices/999 200 3.425 ms - 2
+> technical-interview-api@1.0.1 start C:\Users\ferna\IdeaProjects\technical-interview-api
+> json-server --watch ./res/db.json
+
+
+  \{^_^}/ hi!
+
+  Loading ./res/db.json
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+POST /devices 201 41.228 ms - 38
+POST /devices 201 27.400 ms - 34
+POST /devices 201 7.543 ms - 31
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+POST /devices 201 20.740 ms - 78
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
   ./res/db.json has changed, reloading...
 
   Loading ./res/db.json
@@ -21,9 +63,93 @@ DELETE /devices/999 200 3.425 ms - 2
   Home
   http://localhost:3000
 
+GET /devices 200 33.540 ms - 652
+POST /devices 201 2.899 ms - 45
+GET /devices/1000001 200 9.552 ms - 45
+POST /devices 201 6.990 ms - 48
   ./res/db.json has changed, reloading...
 
   Loading ./res/db.json
+PUT /devices/9998 200 22.424 ms - 42
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+POST /devices 201 8.803 ms - 32
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  ./res/db.json has changed, reloading...
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+PUT /devices/9999 404 10.870 ms - 2
+PUT /devices/-9998000 404 18.258 ms - 2
+PUT /devices/-9999000 404 12.186 ms - 2
+GET /devices/291188 404 30.108 ms - 2
+POST /devices 201 19.989 ms - 35
+POST /devices 201 20.922 ms - 30
+POST /devices 201 6.706 ms - 37
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  ./res/db.json has changed, reloading...
+  ./res/db.json has changed, reloading...
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+DELETE /devices/1000000 200 30.365 ms - 2
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+DELETE /devices/998 200 19.130 ms - 2
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  ./res/db.json has changed, reloading...
   ./res/db.json has changed, reloading...
   Done
 
@@ -55,5 +181,4 @@ npm ERR! Failed at the technical-interview-api@1.0.1 start script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users\ferna\AppData\Roaming\npm-cache\_logs\2021-09-11T16_41_41_856Z-debug.log
-
+npm ERR!     C:\Users\ferna\AppData\Roaming\npm-cache\_logs\2021-09-11T17_40_54_012Z-debug.log

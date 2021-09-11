@@ -6,4 +6,4 @@ Any doubts feel free to ping me on LinkedIn chat (https://www.linkedin.com/in/fe
 
 
 During the cleanup I had some issues with the app.
-It crashes with the log you can find in the root folder of the automation project
+It crashes with the log you can find in the root folder of the automation project as txt file and contents of zip file

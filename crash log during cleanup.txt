@@ -1,0 +1,59 @@
+
+POST /devices 201 31.119 ms - 31
+POST /devices 201 5.191 ms - 45
+GET /devices/1000001 200 12.138 ms - 45
+PUT /devices/998 200 33.944 ms - 47
+PUT /devices/999 200 32.993 ms - 31
+DELETE /devices/1000000 200 33.236 ms - 2
+DELETE /devices/998 200 14.050 ms - 2
+DELETE /devices/999 200 3.425 ms - 2
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  ./res/db.json has changed, reloading...
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+  ./res/db.json has changed, reloading...
+
+  Loading ./res/db.json
+  ./res/db.json has changed, reloading...
+  Done
+
+  Resources
+  http://localhost:3000/devices
+  http://localhost:3000/sites
+  http://localhost:3000/organizations
+
+  Home
+  http://localhost:3000
+
+Some error occurred Error: listen EADDRINUSE: address already in use 127.0.0.1:3000
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3000
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! technical-interview-api@1.0.1 start: `json-server --watch ./res/db.json`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the technical-interview-api@1.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\ferna\AppData\Roaming\npm-cache\_logs\2021-09-11T16_41_41_856Z-debug.log
+

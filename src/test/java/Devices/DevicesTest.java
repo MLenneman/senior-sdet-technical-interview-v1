@@ -102,6 +102,22 @@ public class DevicesTest {
         Assert.assertEquals(deviceCreated.getType(),deviceProvided.getType());
     }
 
+    @Test(priority = 5,
+            description = """
+                            GIVEN that I have the 'devices' endpoint properly configured to respond to get requests
+                                returning single device present on database based on id only for valid ids
+                            WHEN I hit the 'devices' endpoint get request with invalid device's id as param
+                            THEN I should see in the response code Status Code 404
+                                AND in the Response Body a JSON with empty value
+                            """)
+    public void getOneDeviceInvalid() {
+        RestAssured
+                .given().contentType(ContentType.JSON)
+                .when().get(DEVICES.getUrl(291188L))
+                .then().statusCode(404).extract().as(Device.class);
+    }
+
+
     @DataProvider(name = "new-valid-device")
     public Object[][] provideNewValidDevice(){
         return new Object[][]{{new Device().setType("Type1")},{new Device().setId(998L).setType("Type2")},{new Device().setId(999L)}};

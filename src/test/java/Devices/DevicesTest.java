@@ -1,13 +1,11 @@
 package Devices;
 
-import Contants.EndPoints;
 import DTOs.Device;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.internal.mapping.Jackson2Mapper;
-import io.restassured.specification.RequestSenderOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
@@ -21,13 +19,19 @@ import static Contants.EndPoints.DEVICES;
  * This is an example of testing class, for a real world scenario it would be more agnostic containing only assertions
  * the reason for that i to make the tests independent of the testing tool
  *
- * Some of the tests will fail, that is intentional, since some should be negative scenarios, In those tests i left
- * comments with questions that should have been raised during elaboration 
+ * Some of the tests will fail, that is intentional, since some should be negative scenarios, In those tests I've made some
+ * comments with questions that should have been raised during elaboration
  */
 public class DevicesTest {
     private final List<Device> devicesToRemove = new ArrayList<>();
 
     @AfterClass
+    /**
+     * there are better ways to clean the data, using SQL is an example.
+     *
+     * for this test, i could replace the json file present in the mock app,
+     * but it would require to hardcode the path for the mock directory.
+     */
     public void cleanup(){
         if(devicesToRemove.isEmpty()) {
             return;
@@ -127,6 +131,7 @@ public class DevicesTest {
                 .given().contentType(ContentType.JSON).body(deviceProvided)
                 .post(DEVICES.getUrl())
                 .then().extract().as(Device.class);
+        devicesToRemove.add(deviceProvided);
         deviceProvided.setType("Updated type");
         Device deviceUpdated = RestAssured
                 .given().contentType(ContentType.JSON).body(deviceProvided)

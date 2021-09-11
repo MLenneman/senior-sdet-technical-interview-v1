@@ -1,0 +1,7 @@
+For deploying and running the tests on docker use the following command:
+
+ docker build --no-cache -t qascript:latest -f ./Dockerfile .
+
+
+quick reminder, the tests are pointing to localhost and i didn't added a parameter to inform the endpoint url so they will probably 
+fail unless you deploy the mock app to same docker image or change the endpoint in tests to point to correct ip

@@ -1,4 +1,4 @@
-package Insite360Page;
+package Insite360Page.PageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

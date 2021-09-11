@@ -1,11 +1,10 @@
 package Insite360Page;
 
-import org.openqa.selenium.By;
+import Insite360Page.PageObjects.GooglePage;
+import Insite360Page.PageObjects.Insite360Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

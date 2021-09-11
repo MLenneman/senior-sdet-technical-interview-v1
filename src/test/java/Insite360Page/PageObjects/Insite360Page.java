@@ -1,4 +1,4 @@
-package Insite360Page;
+package Insite360Page.PageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,6 +31,6 @@ public class Insite360Page {
     }
 
     public WebElement getFooterMenuWrapperByColumnAndRow(int column, int row) {
-return  footerMenuWrapper.findElement(By.xpath("./div["+column+"]/ul/li["+row+"]/a"));
+        return  footerMenuWrapper.findElement(By.xpath("./div["+column+"]/ul/li["+row+"]/a"));
     }
 }
